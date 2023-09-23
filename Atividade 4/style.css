@@ -1,0 +1,137 @@
+*{
+    font-family: inter;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(31, 31, 31);
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header a, .lateral a {
+    background-color: rgb(75, 75, 75);
+}
+
+header a:hover, .lateral a:hover {
+    background-color: rgb(33, 58, 27);
+}
+
+.lateral{
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(22, 22, 22);
+}
+
+.lateral-nav {
+    position: relative;
+    margin: 0 12%;
+    text-align: left;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.lateral-nav .b, .c, .d {
+    margin-block: 50px;
+}
+
+#right {
+    right: 0;
+    width: 260px;
+}
+
+#left {
+    left: 0;
+}
+
+.b{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+
+.c{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+
+.d{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/******************************************/
+
+/* Eu não deixei as imagens com 150px porque achei que ficaria pequeno e muito distorcido */
+
+.conteudo{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item img {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.gallery {
+    margin: 0 auto;
+    max-width: 780px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+/*** RODAPÉ ***/
+
+.rodape {
+    margin-top: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(22, 22, 22);
+}
+
+.rodape p {
+    color: #FFF;
+
+}
